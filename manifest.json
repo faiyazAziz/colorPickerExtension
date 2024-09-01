@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Element Saver",
+    "version": "1.0",
+    "description": "Select and store HTML elements with visual cues.",
+    "permissions": [
+      "storage",
+      "activeTab",
+      "scripting"
+    ],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["display.html", "display.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  

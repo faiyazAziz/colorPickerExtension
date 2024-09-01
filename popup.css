@@ -1,0 +1,11 @@
+body{
+    width: 200px;
+    height: 150px;
+    margin: 0;padding: 10px;
+}
+
+input{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 10px;
+}
